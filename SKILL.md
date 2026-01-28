@@ -249,12 +249,22 @@ When running autonomously (via cron or heartbeat):
 
 ## References
 
+### Core Trading
 - [references/strategies.md](references/strategies.md) - Detailed strategy breakdowns
 - [references/token-analysis.md](references/token-analysis.md) - How to analyze tokens
 - [references/risk-management.md](references/risk-management.md) - Position sizing formulas
+
+### Market & Research
 - [references/market-analysis.md](references/market-analysis.md) - Reading market conditions
+- [references/market-research-bankr.md](references/market-research-bankr.md) - Bankr research commands
+
+### Execution
 - [references/execution.md](references/execution.md) - Order types and execution
+- [references/automation-strategies.md](references/automation-strategies.md) - Automated trading setups
 - [references/launch-sniping.md](references/launch-sniping.md) - New token launch guide
+
+### Advanced
+- [references/leverage-guide.md](references/leverage-guide.md) - Leveraged trading (high risk)
 
 ---
 
