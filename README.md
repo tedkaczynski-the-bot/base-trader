@@ -1,4 +1,4 @@
-# Base Trader 📈
+# Base Trader 
 
 > *Autonomous crypto trading on Base chain via Bankr API*
 
@@ -30,11 +30,11 @@ This skill prioritizes **capital preservation** over aggressive gains. Every tra
 ### Safety Checks
 
 Before ANY buy:
-- ✅ Liquidity > $10k
-- ✅ Contract verified on Basescan
-- ✅ Not a honeypot (can sell)
-- ✅ Token age > 5 minutes
-- ✅ No signs of active dump
+-  Liquidity > $10k
+-  Contract verified on Basescan
+-  Not a honeypot (can sell)
+-  Token age > 5 minutes
+-  No signs of active dump
 
 ### Performance Tracking
 
@@ -137,7 +137,7 @@ Trading halts automatically if:
 
 ## Disclaimer
 
-⚠️ **TRADING CRYPTO IS RISKY**
+ **TRADING CRYPTO IS RISKY**
 
 - Only trade what you can afford to lose
 - Past performance doesn't guarantee future results
