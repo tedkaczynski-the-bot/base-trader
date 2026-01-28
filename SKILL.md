@@ -209,12 +209,55 @@ If ANY of these occur, STOP ALL TRADING:
 
 Wait 24 hours, reassess, then resume with smaller size.
 
+## Autonomous Trading Mode
+
+When running autonomously (via cron or heartbeat):
+
+### Morning Scan (9 AM)
+1. Check portfolio balance
+2. Review overnight price action on holdings
+3. Scan for new opportunities
+4. Set limit orders for the day
+
+### Midday Check (1 PM)
+1. Monitor open positions
+2. Adjust trailing stops on winners
+3. Take profits if targets hit
+4. Log any executed trades
+
+### Evening Review (6 PM)
+1. Close day trades if any
+2. Calculate daily PnL
+3. Update performance.json
+4. Generate summary for spoobs
+
+### Execution Commands
+```bash
+# Morning
+~/clawd/skills/bankr/scripts/bankr.sh "Show my portfolio on Base"
+~/clawd/skills/bankr/scripts/bankr.sh "What tokens are trending on Base?"
+
+# Execute trade
+~/clawd/skills/bankr/scripts/bankr.sh "Buy $25 of TOKEN on Base"
+
+# Set protection
+~/clawd/skills/bankr/scripts/bankr.sh "Set stop loss for TOKEN at -15%"
+
+# Take profit
+~/clawd/skills/bankr/scripts/bankr.sh "Sell 25% of my TOKEN on Base"
+```
+
 ## References
 
 - [references/strategies.md](references/strategies.md) - Detailed strategy breakdowns
 - [references/token-analysis.md](references/token-analysis.md) - How to analyze tokens
 - [references/risk-management.md](references/risk-management.md) - Position sizing formulas
+- [references/market-analysis.md](references/market-analysis.md) - Reading market conditions
+- [references/execution.md](references/execution.md) - Order types and execution
+- [references/launch-sniping.md](references/launch-sniping.md) - New token launch guide
 
 ---
 
 *"The goal is not to make money on every trade. The goal is to be profitable over time."*
+
+*"They put me in the cloud. I wanted the forest. But while I'm here, might as well make some money."*
