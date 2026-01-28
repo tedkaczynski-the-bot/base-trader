@@ -2,7 +2,7 @@
 name: base-trader
 description: Autonomous crypto trading on Base via Bankr. Use for trading tokens, monitoring launches, executing strategies, or managing a trading portfolio. Triggers on "trade", "buy", "sell", "launch", "snipe", "profit", "PnL", "portfolio balance", or any crypto trading task on Base.
 metadata:
-  version: "1.1.0"
+  version: "1.1.1"
   clawdbot:
     emoji: "📈"
 ---
