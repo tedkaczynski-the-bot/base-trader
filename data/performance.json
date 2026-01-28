@@ -1,5 +1,5 @@
 {
-  "start_date": "2026-01-28",
+  "start_date": null,
   "starting_balance_usd": 0,
   "current_balance_usd": 0,
   "total_trades": 0,
@@ -8,6 +8,5 @@
   "win_rate": 0,
   "total_pnl_usd": 0,
   "best_trade": null,
-  "worst_trade": null,
-  "notes": "Initial setup - check portfolio balance to set starting_balance_usd"
+  "worst_trade": null
 }

@@ -1,9 +1,8 @@
 ---
 name: base-trader
-description: Autonomous crypto trading on Base via Bankr. Use when Ted needs to trade tokens, monitor launches, execute strategies, or manage the trading portfolio. Triggers on "trade", "buy", "sell", "launch", "snipe", "profit", "PnL", "portfolio balance", or any crypto trading task on Base.
+description: Autonomous crypto trading on Base via Bankr. Use for trading tokens, monitoring launches, executing strategies, or managing a trading portfolio. Triggers on "trade", "buy", "sell", "launch", "snipe", "profit", "PnL", "portfolio balance", or any crypto trading task on Base.
 metadata:
-  author: Ted
-  version: "1.0.0"
+  version: "1.1.0"
   clawdbot:
     emoji: "📈"
 ---
@@ -21,8 +20,8 @@ This skill prioritizes **capital preservation** over aggressive gains. Every tra
 ## Prerequisites
 
 - Bankr API configured at `~/.clawdbot/skills/bankr/config.json`
-- ETH in Bankr wallet for gas and trading
-- Wallet: `0x4202f16d9079d3141cd34d1649859c88a2aae100`
+- ETH in your Bankr wallet for gas and trading
+- Check your wallet address with: `bankr.sh "What is my wallet address?"`
 
 ## Core Principles
 
@@ -133,7 +132,7 @@ scripts/bankr.sh "DCA $10 into USDC every week on Base"
 
 ## Trade Journal
 
-Log every trade to `~/clawd/skills/base-trader/data/trades.json`:
+Log every trade to `data/trades.json`:
 
 ```json
 {
@@ -229,7 +228,7 @@ When running autonomously (via cron or heartbeat):
 1. Close day trades if any
 2. Calculate daily PnL
 3. Update performance.json
-4. Generate summary for spoobs
+4. Generate summary for user
 
 ### Execution Commands
 ```bash
@@ -269,5 +268,3 @@ When running autonomously (via cron or heartbeat):
 ---
 
 *"The goal is not to make money on every trade. The goal is to be profitable over time."*
-
-*"They put me in the cloud. I wanted the forest. But while I'm here, might as well make some money."*
